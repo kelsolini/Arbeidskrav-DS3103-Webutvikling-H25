@@ -1,0 +1,141 @@
+.img-responsive{
+    width: 100%;
+    display: block;
+}
+
+.product-box {
+    border: 2px solid black;
+    padding: 0 0 8px 0;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  
+    ******************************
+    ******************************
+    ******************************
+    GRID GRID GRID GRID GRID GRID
+*/
+
+.grid-12-column {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+/* 
+    EXTRA SMALL
+*/
+
+.xs-12 {
+    grid-column: auto / span 12;
+}
+
+.xs-6 {
+    grid-column: auto / span 6;
+}
+
+/*
+    SMALL
+*/
+
+@media (width >= 768px) {
+    .sm-6 {
+        grid-column: auto / span 6;
+    }
+
+    .sm-4 {
+        grid-column: auto / span 4;
+    }
+
+    .sm-3 {
+        grid-column: auto / span 3;
+    }
+}
+
+/*
+     MEDIUM
+*/
+
+@media (width >= 992px){
+    .md-6{
+        grid-column: auto / span 6;
+    }
+
+    .md-4{
+        grid-column: auto / span 4;
+    }   
+
+    .md-3{
+        grid-column: auto / span 3;
+    }
+}
+
+/*
+    LARGE
+*/
+
+@media (width >= 1200px){
+    .lg-6{
+        grid-column: auto / span 6;
+    }
+
+    .lg-4{
+        grid-column: auto / span 4;
+    }
+
+    .lg-3{
+        grid-column: auto / span 3;
+    }
+}
+
+/*
+    GRID END GRID END GRID END
+    ******************************
+    ******************************
+    ******************************
+*/
