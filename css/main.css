@@ -1,16 +1,28 @@
 body {
-
     background-color: #8C5042;
 }
 
-header {
-    padding: 16px;
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 24px;
+    padding: 24px;
     background-color: #F2A649;
 }
 
-footer {
+.fa-house, .fa-cart-shopping {
+    margin-right: 34px;
+    font-size: 36px;
+    color: white;
+}
+
+h1 {
+    margin: 0000;
     padding: 16px;
+    color: white;
     background-color: #D96704;
+
 }
 
 .img-responsive{
