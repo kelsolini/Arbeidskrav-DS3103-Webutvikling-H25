@@ -22,6 +22,11 @@ const foodArray = [
         price: 350 
     },
     {
+        name: "karbonader",
+        image: "karbonader.jpg",
+        price: 1000 
+    },
+    {
         name: "kyllingkjøttdeig",
         image: "kyllingkjøttdeig.jpg",
         price: 325 
