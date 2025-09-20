@@ -13,7 +13,7 @@ const printAllproducts = () => {
                 <img class="img-responsive product-image" src="images/${product.image}" alt="${product.name}. foto."/>
                 <h3>${product.name}</h3>
                 <p>${product.price},-</p>
-                <button data-id="${product.id}">Kjøp</button>
+                <button class="button button--add" data-id="${product.id}">Kjøp</button>
                 
             </article>
         `;
