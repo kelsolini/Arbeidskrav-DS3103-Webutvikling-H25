@@ -14,6 +14,8 @@ const ShoppingChartModule = ( () => {
     }
 };
 
+
+
 return {
     addToCart
 };
