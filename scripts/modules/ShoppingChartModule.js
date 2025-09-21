@@ -16,23 +16,17 @@ const addToCart = ( newProduct ) => {
 
 const removeFromCart = ( productToRemove ) => {
 
-    console.log(productToRemove)
-
     const products = JSON.parse(localStorage.getItem(productKey));
 
-    console.log(products);
+    const indexToRemove = products.findIndex(product =>
+        product.id === productToRemove.id
+    
+    );
 
-    const filtered = products.filter(product => product.id !== productToRemove.id);
-
-    localStorage.setItem(productKey, JSON.stringify(filtered));
-
-    console.log(filtered);
-
-    /*
-        TODO: lag en funksjon som sletter velgt product
-        men ikke sletter alle produkter med samme id.
-    */
-
+    if (indexToRemove !== -1) {
+        products.splice(indexToRemove, 1);
+        localStorage.setItem(productKey, JSON.stringify(products));
+    }
 };
 
 return {

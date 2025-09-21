@@ -34,8 +34,7 @@ const addToBasket = ( event ) => {
     const id = Number(event.target.dataset.id);
     const choosenProduct = ProductModule.getId(id);
 
-    ShoppingChartModule.addToCart( choosenProduct )
-
+    ShoppingChartModule.addToCart( choosenProduct );
 }
 
 printAllproducts();
