@@ -30,11 +30,69 @@ h1 {
     display: block;
 }
 
+.shoppingChart-section {
+    margin: 8px;
+}
+
+.shoppingChart-box {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 8px 4px 8px;
+
+    .shoppingChart__img {
+        width: 15%;
+    }
+}
+
+.product-section {
+    margin: 8px;
+}
+
 .product-box {
     padding: 0 0 8px 0;
     background-color: #f2f2f2;
     border-radius: 15px;
     overflow: hidden;
+
+    .product-box__text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 32px;
+    }
+}
+
+button {
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.button--add {
+    background-color: #28a745;
+}
+
+.button--add:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.button--del {
+    background-color: #dc3545;
+    
+}
+
+.button--del:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
 }
 
 /*  

@@ -1,7 +1,7 @@
 import ProductModule from "./modules/ProductModule.js";
 import ShoppingChartModule from "./modules/ShoppingChartModule.js";
 
-const outputSection = document.querySelector(".product-section");
+const outputSection = document.querySelector(".shoppingChart-section");
 
 
 const showShoppingChart = () => {
@@ -11,11 +11,11 @@ const showShoppingChart = () => {
     
     products.forEach(product => {
         htmlTxt += `
-            <article class="product-box xs-6 sm-6 md-4 lg-3">
-                <img class="img-responsive product-image" src="images/${product.image}" alt="${product.name}. foto."/>
+            <article class="shoppingChart-box xs-12">
+                <img class="img-responsive product-image shoppingChart__img" src="images/${product.image}" alt="${product.name}. foto."/>
                 <h3>${product.name}</h3>
                 <p>${product.price},-</p>
-                <button class="button button--delete" data-id="${product.id}">Slett</button>
+                <button class="button--del" data-id="${product.id}">Slett</button>
 
             </article>
         `;
