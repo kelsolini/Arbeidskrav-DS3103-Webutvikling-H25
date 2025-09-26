@@ -37,6 +37,7 @@ const addToBasket = ( event ) => {
     const choosenProduct = ProductModule.getId(id);
 
     ShoppingChartModule.addToCart( choosenProduct );
+    alert("Lagt til: " + choosenProduct.name + "til handlekurven");
 }
 
 printAllproducts();
